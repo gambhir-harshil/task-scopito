@@ -112,7 +112,7 @@ const Dashboard = () => {
                   <img
                     src={selectedImage}
                     alt=""
-                    className="object-cover w-full h-full"
+                    className="object-cover w-[1400px] h-[480px]"
                   />
                 </AreaSelector>
               </>
@@ -120,12 +120,11 @@ const Dashboard = () => {
               <img
                 src={selectedImage}
                 alt=""
-                className="object-cover w-full h-full"
+                className="object-cover w-[1400px] h-[480px]"
               />
             )}
           </div>
           <div className="w-[600px] flex flex-col justify-between items-center px-4 py-8">
-            <p>Previously added issues</p>
             <div className="flex flex-col gap-8">
               <div className="flex flex-col items-center w-full gap-2">
                 <label className="font-semibold">Name the issue</label>

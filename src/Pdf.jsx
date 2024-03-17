@@ -29,7 +29,7 @@ const PdfPage = () => {
 
         // Calculate the width and height of the PDF page
         const pdfWidth = pdf.internal.pageSize.width;
-        const pdfHeight = pdf.internal.pageSize.height;
+        const pdfHeight = (canvas.height / canvas.width) * pdfWidth;
 
         // Add the image to the PDF, scaling it to fit the page size
         pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
@@ -48,7 +48,7 @@ const PdfPage = () => {
         {state.map((issue) => (
           <div key={issue.path} className="px-8 py-4">
             <div className="relative">
-              <img src={issue.path} className="h-80" />
+              <img src={issue.path} className="h-[480px] w-[900px]" />
               {issue.areas.length === 1 && (
                 <div
                   className="absolute border border-red-500 bg-red-500/50"
