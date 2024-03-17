@@ -12,7 +12,10 @@
   "dependencies": {
     "@bmunozg/react-image-area": "^1.1.0",
     "google-maps-react": "^2.0.6",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "leaflet": "^1.9.4",
+    "lucide-react": "^0.358.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
